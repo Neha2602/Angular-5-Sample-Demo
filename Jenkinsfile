@@ -7,7 +7,7 @@ node {
                       bat "npm install"
          }
          stage('Build'){
-                     bat "npm run ng build"
+                     bat "ng build"
          }
          stage('Deploy'){
                       bat "pm2 restart all"
