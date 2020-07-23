@@ -8,7 +8,7 @@ node {
          }
          stage('Build'){
                      bat "npm install @angular-devkit/core"
-                     bat "npm run ng build"           
+                     bat "npm run build"           
          }
          stage('Deploy'){
                       bat "pm2 restart all"
